@@ -15,25 +15,127 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
+
+:root {
+	background-color: #141414;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url(font/HelveticaNeue.ttf);
 }
 
 /*BODY*/
-	body{
 
-	}
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
 
 /*TOPO*/
-	header.topo{
-		
-	}
+
+header.topo {
+	display: inline-block;
+
+}
+
+header figcaption {
+	visibility: hidden;
+}
+
+header.topo img {
+	height: 45px;
+	width: 167px;
+	;
+}
 
 /*RODAPÉ*/
-	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
 
+div.pg-home {	
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+div.pg-home section {
+	display: table;
+	list-style-type: none;
+	width: 856px;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	columns: 186px 4;
+
+}
+
+div.pg-home header h2 {
+	color: #ffffff;
+	column-span: all;
+	text-align: center;
+	font-size: 3.5vw;
+	font-weight: normal;
+	margin: 5px;
+}
+
+div.pg-home ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+div.pg-home h3 {
+	visibility: hidden;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+div.pg-home li {
+	width: 186px;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	text-align: center;
+}
+
+div.pg-home figcaption {
+	color: grey;
+	margin: 10px;
+	text-align: center;
+	font-size: small;
+}
+
+div.pg-home img {
+	width: 100%;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+}
+
+div.pg-home footer {
+	column-span: all;
+	text-align: center;
+	position: relative;
+}
+
+div.pg-home button {	
+	display: inline-block;
+	border: 1px solid grey;
+	color: grey;
+	text-transform: uppercase;
+	padding: 0.5em 1.5em;
+	font-size: 0.9em;
+	width: 30%;
+	height: 40px;
+	background-color: transparent;
+
+}
